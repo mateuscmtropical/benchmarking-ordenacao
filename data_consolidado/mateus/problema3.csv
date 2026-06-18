@@ -1,0 +1,3 @@
+Algoritmo,Tempo_s,Comparacoes,Trocas
+Insertionsort,0.000077,50247,248
+Shellsort,0.000790,700254,248

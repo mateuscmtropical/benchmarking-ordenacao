@@ -1,0 +1,13 @@
+# OneDrive / Windows
+desktop.ini
+Thumbs.db
+ehthumbs.db
+
+# Artefatos de build temporarios
+_relatorio.html
+*.tmp
+
+# Binarios compilados (o codigo-fonte fica versionado em src/)
+*.exe
+*.o
+src/data/

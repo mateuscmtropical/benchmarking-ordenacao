@@ -1,0 +1,3 @@
+Algoritmo,Media_s,DesvioPadrao_s,Comparacoes,Trocas
+Heapsort,0.000656,0.000036,112126,60932
+Quicksort,0.025944,0.004292,12497500,12502499
