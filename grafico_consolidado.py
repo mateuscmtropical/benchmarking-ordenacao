@@ -1,10 +1,10 @@
 """
 Graficos comparativos dos 3 PCs (Mateus / Dieimes / Pedro).
 
-Le os CSVs de data_consolidado/<maquina>/ -- nada e fixado no codigo, os
+Le os CSVs de data/<maquina>/ -- nada e fixado no codigo, os
 graficos refletem sempre os dados reais de cada maquina.
 
-Saidas (em data_consolidado/):
+Saidas (em data/):
   1. grafico_p2_consolidado.png        -> Heapsort vs Quicksort (P2) nos 3 PCs
   2. grafico_throughput_consolidado.png -> vazao do Selectionsort (450M comparacoes)
 
@@ -16,7 +16,7 @@ import matplotlib
 matplotlib.use("Agg")  # backend sem janela (salva direto em arquivo)
 import matplotlib.pyplot as plt
 
-BASE = os.path.join(os.path.dirname(os.path.abspath(__file__)), "data_consolidado")
+BASE = os.path.join(os.path.dirname(os.path.abspath(__file__)), "data")
 
 # (rotulo no grafico, subpasta, cor)
 MAQUINAS = [

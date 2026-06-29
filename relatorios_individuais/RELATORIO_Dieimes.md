@@ -2,7 +2,9 @@
 
 ## 1. Identificação
 
-- **Integrante:** Dieimes Nunes de Souza
+- **Integrante 1:** Mateus da Silva Rego (RA: 2864584)
+- **Integrante 2:** Dieimes Nunes de Souza (RA: 2848244)
+- **Integrante 3:** Pedro Manoel Rosa Domingues Santos (RA: 2627167)
 - **Disciplina:** Estrutura de Dados — UTFPR
 - **Linguagem:** C
 - **Ambiente:** Linux Mint

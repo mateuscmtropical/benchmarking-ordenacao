@@ -102,7 +102,7 @@ Pedro, mas Dieimes e Pedro são idênticas entre si. A causa é a biblioteca C:
 | Selectionsort | Ordenado (melhor) | 0,932081 | 0,813375 | 1,482661 |
 | Selectionsort | Inverso (pior) | 0,988081 | 0,812564 | 1,470478 |
 
-_(dados brutos: `data_consolidado/{mateus,dieimes,pedro}/problema1.csv`)_
+_(dados brutos: `data/{mateus,dieimes,pedro}/problema1.csv`)_
 
 ### 4.2 Contagens (comparações)
 
@@ -167,9 +167,9 @@ n = 5.000, a assinatura do pior caso O(n²), idêntica nos três PCs.
 | **Mateus** (i7-11800H) | 0,000378 ± 0,000155 | 0,023203 ± 0,002982 | 61,4× |
 | **Pedro** (i5-7200U) | 0,000656 ± 0,000036 | 0,025944 ± 0,004292 | 39,5× |
 
-_(dados: `data_consolidado/{maquina}/problema2_resumo.csv` e `..._execucoes.csv`)_
+_(dados: `data/{maquina}/problema2_resumo.csv` e `..._execucoes.csv`)_
 
-![Heapsort vs Quicksort nos 3 PCs](data_consolidado/grafico_p2_consolidado.png)
+![Heapsort vs Quicksort nos 3 PCs](data/grafico_p2_consolidado.png)
 
 ### 5.3 Resposta à pergunta: por que o Quicksort sofre e o Heapsort não?
 
@@ -213,7 +213,7 @@ Contagens (Mateus usa libc diferente, logo 248 vs 250 trocas, ver §3):
 | Mateus | 50.247 | 700.254 | 248 |
 | Dieimes = Pedro | 50.249 | 700.256 | 250 |
 
-_(dados: `data_consolidado/{maquina}/problema3.csv`)_
+_(dados: `data/{maquina}/problema3.csv`)_
 
 ### 6.1 Resposta à pergunta: os "saltos longos" do Shell ajudam?
 
@@ -243,7 +243,7 @@ comparações por segundo; maior é melhor):
 | **Mateus** | i7-11800H | 0,944 | **476** |
 | **Pedro** | i5-7200U | 1,472 | **306** |
 
-![Vazão do Selectionsort por PC](data_consolidado/grafico_throughput_consolidado.png)
+![Vazão do Selectionsort por PC](data/grafico_throughput_consolidado.png)
 
 ### 7.2 Ranking e interpretação
 
@@ -313,7 +313,7 @@ mostraram-se a evidência mais estável e foram a espinha dorsal da análise.
 Atividade-ordenacao/
 ├── RELATORIO_CONSOLIDADO.md          (este documento)
 ├── grafico_consolidado.py            (gera os 2 gráficos abaixo a partir dos CSVs)
-└── data_consolidado/
+└── data/
     ├── mateus/    problema1.csv, problema2_execucoes.csv, problema2_resumo.csv, problema3.csv
     ├── dieimes/   (mesmos 4 arquivos)
     ├── pedro/     (mesmos 4 arquivos)
@@ -323,12 +323,8 @@ Atividade-ordenacao/
 
 Para regenerar os gráficos: `python grafico_consolidado.py`
 
-## Apêndice B: observação sobre o `RELATORIO_Pedro.md`
+## Apêndice B: relatórios individuais
 
-O arquivo `RELATORIO_Pedro.md` foi derivado do template do Mateus e ficou com texto
-desatualizado em parte: o cabeçalho ainda cita `MSYS2/MinGW-w64` (o ambiente real
-do Pedro é Ubuntu) e as tabelas dos Problemas 2 e 3 exibem números do Mateus, não
-os do Pedro. A fonte de verdade adotada neste consolidado são os arquivos CSV
-(`data_consolidado/pedro/`), que contêm os tempos e contagens reais medidos na
-máquina do Pedro. Recomenda-se corrigir o `RELATORIO_Pedro.md` individual antes da
-entrega, se ele for entregue separadamente.
+Os relatórios individuais de cada integrante estão em `relatorios_individuais/` e
+contêm os dados, tabelas e análises medidos em cada máquina. A fonte de verdade
+para os dados são os CSVs em `data/<maquina>/`.

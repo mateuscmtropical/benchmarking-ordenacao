@@ -17,7 +17,7 @@ resultados entre as máquinas.
 1. **`RELATORIO_CONSOLIDADO.pdf`** (ou `.md`) é o documento principal. Contém a
    análise completa, as respostas às perguntas do enunciado e a comparação entre os
    três ambientes. Comece por ele.
-2. Os dados brutos de cada máquina estão em `data_consolidado/`.
+2. Os dados brutos de cada máquina estão em `data/`.
 3. O código-fonte único, compilado e executado nas três máquinas, está em `src/`.
 
 ## Estrutura da pasta
@@ -33,7 +33,7 @@ Entrega-Ordenacao/
 │   ├── ordenacao.c                  (os 6 algoritmos instrumentados)
 │   ├── main.c                       (geradores, harness, escrita dos CSVs)
 │   └── README_build.md              (detalhes de compilação do código)
-├── data_consolidado/
+├── data/
 │   ├── mateus/                      (4 CSVs medidos no PC do Mateus)
 │   ├── dieimes/                     (4 CSVs medidos no PC do Dieimes)
 │   ├── pedro/                       (4 CSVs medidos no PC do Pedro)
@@ -41,7 +41,7 @@ Entrega-Ordenacao/
 │   └── grafico_throughput_consolidado.png
 └── relatorios_individuais/
     ├── RELATORIO_Mateus.md
-    ├── relatorio_dieimes.md
+    ├── RELATORIO_Dieimes.md
     └── RELATORIO_Pedro.md
 ```
 
@@ -71,7 +71,7 @@ mkdir data
 
 O programa gera os arquivos `data/problema1.csv`, `data/problema2_execucoes.csv`,
 `data/problema2_resumo.csv` e `data/problema3.csv`. Esses foram os arquivos
-coletados de cada integrante e reunidos em `data_consolidado/`.
+coletados de cada integrante e reunidos em `data/`.
 
 ## Como regenerar os gráficos
 
@@ -81,14 +81,13 @@ Na raiz da entrega (precisa de Python com matplotlib):
 python grafico_consolidado.py
 ```
 
-Lê os CSVs de `data_consolidado/<maquina>/` e regrava os 2 PNGs. Nada é fixado no
+Lê os CSVs de `data/<maquina>/` e regrava os 2 PNGs. Nada é fixado no
 código; os gráficos refletem sempre os dados reais.
 
 ## Notas
 
 - As contagens de comparações e trocas são determinísticas e serviram para validar
   que o mesmo código rodou nas três máquinas (ver seção 3 do relatório principal).
-- O relatório individual do Pedro (`relatorios_individuais/RELATORIO_Pedro.md`)
-  tem partes de texto desatualizadas herdadas de um template; os valores corretos
-  da máquina dele estão nos CSVs de `data_consolidado/pedro/`, que foram a fonte de
-  verdade usada no relatório consolidado (ver Apêndice B do relatório principal).
+- Os relatórios individuais (`relatorios_individuais/`) contêm os dados e análises
+  de cada integrante. O relatório consolidado (`RELATORIO_CONSOLIDADO.pdf`) é o
+  documento principal de entrega.

@@ -2,8 +2,9 @@
 
 ## 1. Identificação
 
-- **Integrante 1:** Mateus _(preencher nome completo)_
-- **Integrante 2:** _(preencher nome completo)_
+- **Integrante 1:** Mateus da Silva Rego (RA: 2864584)
+- **Integrante 2:** Dieimes Nunes de Souza (RA: 2848244)
+- **Integrante 3:** Pedro Manoel Rosa Domingues Santos (RA: 2627167)
 - **Disciplina:** Estrutura de Dados — 1º Semestre / UTFPR
 - **Linguagem:** C (gcc 15.2.0, MSYS2/MinGW-w64)
 
