@@ -8,9 +8,9 @@ resultados entre as máquinas.
 
 | Integrante | RA | Máquina | Ambiente |
 |---|---|---|---|
-| Dieimes Nunes de Souza | 2848244 | Ryzen 5 5600G | Linux Mint 22.3 / gcc 13.3.0 |
-| Mateus da Silva Rego | 2864584 | i7-11800H | Windows 11 / gcc 15.2.0 (MinGW) |
-| Pedro Manoel Rosa Domingues Santos | 2627167 | i5-7200U | Ubuntu (Linux) / gcc 15.2.0 |
+| Dieimes Nunes de Souza | 02848244 | Ryzen 5 5600G | Linux Mint 22.3 / gcc 13.3.0 |
+| Mateus da Silva Rego | 02864584 | i7-11800H | Windows 11 / gcc 15.2.0 (MinGW) |
+| Pedro Manoel Rosa Domingues Santos | 02627167 | i5-7200U | Ubuntu (Linux) / gcc 15.2.0 |
 
 ## Como ler esta entrega
 
